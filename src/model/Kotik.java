@@ -74,6 +74,7 @@ public class Kotik {
         int saySatiety = 1;
 
         if (getSatiety() - saySatiety < 0) {
+            System.out.print("Котик отказывается мяукать, он хочет есть. Котик покушал.");
             hungry();
         }
 
@@ -85,6 +86,7 @@ public class Kotik {
         int playSatiety = 4;
 
         if (getSatiety() - playSatiety < 0) {
+            System.out.print("Котик отказывается играть, он хочет есть. Котик покушал.");
             hungry();
         }
 
@@ -96,6 +98,8 @@ public class Kotik {
         int sleepSatiety = 3;
 
         if (getSatiety() - sleepSatiety < 0) {
+            System.out.print("Котик отказывается спать, он хочет есть. Котик покушал.");
+
             hungry();
         }
 
@@ -107,6 +111,7 @@ public class Kotik {
         int chaseSatiety = 5;
 
         if (getSatiety() - chaseSatiety < 0) {
+            System.out.print("Котик отказывается ловить мышь, он хочет есть. Котик покушал.");
             hungry();
         }
 
